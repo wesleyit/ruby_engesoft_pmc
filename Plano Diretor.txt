@@ -1,0 +1,11 @@
+Qual é a ideia principal, a contribuição, o recado? Isso deve se traduzir pelo título. Para obtê-lo, jogue as palavras chaves no papel, tente combinações até achar a fórmula mágica.
+
+A ideia principal do meu trabalho é mostrar que aplicando alguns dos conceitos aprendidos em engenharia de software, ume pessoa com relativamente pouca experiência em programação, trabalhando sozinha, consegue fazer uma atividade considerada complexa, e não restrita à teoria: consegue aplicar esta atividade em um caso prático.
+Ideias: Aplicação dos paradigmas de engenharia de software na criação de um framework/arcabouço de redes neurais artificiais perceptron multicamadas utilizado como classificador para questionários ápoiadores no diagnóstico do autismo.
+Objetivo: Criar um framework para MLP que possa facilitar a aplicação desta tecnologia
+======================================================================================
+
+Obtido o título, pense nos capítulos. Você vai dever contextualizar e escrever o material necessário ao entendimento de suas contribuições. Em geral, isso leva a criar um ou dois capítulos. Sua proposta merece pelo menos um ou dois capítulos também, por exemplo, para detalhar o projeto e depois a implementação. Por fim, não basta dizer que você projetou um chip revolucionário ou inventou uma estrutura de dados que possibilita qualquer acesso em tempo constante, sem prover argumentos para validar essa pretensão. Ou seja, deverá ter pelo menos mais um capítulo de avaliação de desempenho, ou de prova teórica da qualidade de sua proposta. Enfim, uma conclusão deverá sintetizar os avanços e listar as limitações a serem superadas em seu trabalho. (Ninguém irá acreditar que não tem limitação, então é melhor ser honesto nessa parte…)
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Rede criada com sucesso!</h2>
+		<p>Uma nova rede do tipo <%= @formato %> foi criada, e seu identificador é #<%= session[:rede].__id__ %></p>
+		<p>Agora é necessário treinar a nova rede, ou carregar dados de treinamentos anteriores.</p>
+		<h3>Treinar a rede</h3>
+		<p>Insira no formulário abaixo um conjunto de dados de treinamento.
+		Estes dados devem conter os padrões de entrada e as respostas desejadas.
+		O formato é sempre de um Array com os valores de teste e os valores esperados:</p>
+		<p>[entrada1,  entrada2, entrada3, esperado1, esperado2]</p>
+		<p>No modelo acima está contemplada uma rede com 3 entradas e duas saídas. 
+		Vamos supor um exemplo prático: uma rede com 2 camadas, no formato <b>2, 1</b>, treinada para exibir a tabela lógica AND:</p>
+		<p><b>Treinamento: <br>
+		0, 0, 0<br>
+		1, 0, 0<br>
+		0, 1, 0<br>
+		1, 1, 1<br>
+		</p>
+		<p>Utilize sempre um valor por linha.<p>
+		<form action="/treinar" method="post">
+			<textarea rows="8" cols="50" name="dados_treino"></textarea>
+			<br>
+			<input type="submit" value="Treinar"/>
+		</form>
+		<h3>Carregar dados de um arquivo</h3>
+		<form action="/carregar" method="post" enctype="multipart/form-data">
+			<input type="file" name="arquivo_de_treino"/>
+			<input type="submit" value="Treinar"/>
+		</form>
+	</body>
+</html>
+

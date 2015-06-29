@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Criar uma nova rede</h2>
+		<p>Para criar uma nova rede, é necessário fornecer o formato, ou seja, quantidade de camadas e neurônios.</p>
+		<p>No tamanho da rede, desconsideramos a camada de entrada, já que ela não realiza processamento.</p>
+		<p>Sendo assim, para criar uma rede com 1 camada oculta com 10 neurônios, duas camadas ocultas com 5 neurônios e uma camada de saída com mais 2 neurônios, o formato é <b>10, 5, 5, 2</b>. Simples, não é?
+		Para criar uma rede com 2 neurônios na camada oculta e 1 neurônio de saída, o formato é <b>2, 1</b>.</p>
+		<form action="/criar" method="post">
+			Formato da rede: <input type="text" name="formato" /> <input type="submit" value="Criar"/>
+		</form>
+	</body>
+</html>

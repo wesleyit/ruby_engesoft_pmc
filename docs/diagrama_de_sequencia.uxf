@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>10</x>
+      <y>370</y>
+      <w>710</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>title: Treinar a Rede
+_Usuário~usr_|_Arcabouço RNA Perceptron Multicamadas~sys_
+
+usr-&gt;&gt;sys:Fornece os dados de treinamento
+iframe{:loop
+sys-&gt;&gt;sys:Propaga adiante
+sys-&gt;&gt;sys:Calcula os erros
+sys-&gt;&gt;sys:Ajusta os pesos
+iframe}
+sys-&gt;&gt;usr:Retorna o objeto "rede" treinado
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>10</x>
+      <y>0</y>
+      <w>710</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>title: Criar a Rede
+_Usuário~usr_|_Arcabouço RNA Perceptron Multicamadas~sys_
+
+usr-&gt;&gt;sys:Fornece variáveis de configuração
+usr-&gt;&gt;sys:Fornece o tamanho da rede
+iframe{:loop
+sys-&gt;&gt;sys:Cria as camadas
+sys-&gt;&gt;sys:Cria os neurônios
+sys-&gt;&gt;sys:Cria as conexões
+iframe}
+sys-&gt;&gt;usr:Retorna o objeto "rede" criado</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.SequenceDiagram</type>
+    <coordinates>
+      <x>10</x>
+      <y>710</y>
+      <w>710</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>title: Executar a Rede
+_Usuário~usr_|_Arcabouço RNA Perceptron Multicamadas~sys_
+
+usr-&gt;&gt;sys:Fornece os dados de execução
+sys-&gt;&gt;sys:Propaga adiante
+sys-&gt;&gt;usr:Fornece a resposta</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

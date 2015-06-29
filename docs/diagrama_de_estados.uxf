@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1010</x>
+      <y>220</y>
+      <w>220</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Neuronio
+--
+-entradas: float[]
+-taxa_de_aprendizado: float
+-gradiente: float
+-derivada_da_ativacao: float
+-parcela_do_erro: float[]
+-saida: float
+-peso_bias: float
+-bias: float
+--
++soma_entradas(): float
++ativa(): float
++calcula_gradiente: float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1000</x>
+      <y>610</y>
+      <w>240</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Conexao
+--
+-neuronio_de_origem: neuronio
+-neuronio_de_destino: neuronio
+-peso: float
+--
++propaga_adiante()
++retropropaga()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>240</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Camada
+--
+-neuronios: neuronio[]
+-conexoes_para_frente: conexao[]
+-conexoes_para_tras: conexao[]
+--
++propaga(): void
++retropropaga(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>320</x>
+      <y>490</y>
+      <w>280</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Rede
+--
+camadas: camada[]
+epocas: integer
+--
+treina(): boolean
+executa(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1090</x>
+      <y>420</y>
+      <w>50</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;190;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>460</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>440;100;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>450</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>430;410;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>440</x>
+      <y>330</y>
+      <w>50</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;160</additional_attributes>
+  </element>
+</diagram>
